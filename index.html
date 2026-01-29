@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,12 +10,15 @@
 
 <body>
   <h1>Guess The Number!</h1>
+  <p>Hádej číslo od 1 do 100</p>
+
   <button id="start-game">Začít hru</button>
+
   <section id="game" class="hidden">
     <form id="game-form">
       <div>
-        <label for="guess">Vaše číslo (0-100):</label>
-        <input id="guess" type="number" />
+        <label for="guess">Vaše číslo (1-100):</label>
+        <input id="guess" type="number" min="1" max="100" />
       </div>
       <div id="evaluation"></div>
       <button id="submit" type="submit">Hádej!</button>
@@ -25,10 +28,9 @@
 
   <section>
     <h2>Historie her</h2>
-    <ul>
-      <li></li>
-    </ul>
+    <ul id="history"></ul>
   </section>
+
   <script src="main.js"></script>
 </body>
 
