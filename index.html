@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess The Number!</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <button>Začít hru</button> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Guess The Number!</h1>
+      <button id="start-game">Začít hru</button>
+    <section id="game" class="hidden">
+        <form id="game-form">
+            <div>
+                <label for="guess">Enter your number:</label>
+                <input id="guess" type="text">
+            </div>
+            <button type="submit">Guess!</button>
+        </form>
+    </section>
+
+      <section>
+        <h2>Historie her</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
