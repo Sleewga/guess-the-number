@@ -1,3 +1,17 @@
 .hidden {
     display: none;
 }
+
+.correct {
+    color: lime;
+    background-color: darkgreen;
+}
+
+.incorrect {
+    color: red;
+    background-color: darkred;
+}
+
+.evaluation {
+    /* display: none; */
+}
