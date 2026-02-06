@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess The Number!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Guess The Number!</h1>
+  <p>Hádej číslo od 1 do 100</p>
+
+  <button id="start-game">Začít hru</button>
+
+  <section id="game" class="hidden">
+    <form id="game-form">
+      <div>
+        <label for="guess">Vaše číslo (1-100):</label>
+        <input id="guess" type="number" min="1" max="100" />
+      </div>
+      <div id="evaluation"></div>
+      <button id="submit" type="submit">Hádej!</button>
+    </form>
+    <button id="try-again" class="hidden">Zkusit znovu</button>
+  </section>
+
+  <section>
+    <h2>Historie her</h2>
+    <ul id="history"></ul>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

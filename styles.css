@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#start-game {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#game {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#game-form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#evaluation {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#submit {
+    width: 100%;
+    background-color: #28a745;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+#try-again {
+    width: 100%;
+    background-color: #ffc107;
+    color: #333;
+}
+
+#try-again:hover {
+    background-color: #e0a800;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    color: #155724;
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+}
+
+.incorrect {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+}
+
+section:last-child {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#history {
+    list-style-type: none;
+}
+
+#history li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+}
+
+#history li:nth-child(even) {
+    background-color: #e9ecef;
+}
